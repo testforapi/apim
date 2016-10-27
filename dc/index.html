@@ -2,14 +2,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello APIM!!!</title>
+	<title>TEST Developer center</title>
 	<!--<link href="style.css" rel="stylesheet" type="text/css">-->
 	<script src="script.js"></script>
 </head>
 <body>
-	<h1>Hello APIM!!!</h1>
-	<button onclick = "btn_getFile()">get user profile</button>
-	<div id="container">
+	
+	<button onclick = "btn_userLogin()">login</button>
+	<div id="user_container">
 	</div>
+
+
+	<h1>Create an app</h1>
+	<div>app name<input type="text"></div>
+	<div>app description<input type="text"></div>
+	<div>redirect URL<input type="text"></div>
+	<button onclick = "btn_createApp()">create</button>
+	<div id="app_container">
+	</div>
+
+	<p>-------------------------------------------------------------------------------------------</p>
+
+	<h1>Get API document</h1>
+
+	<button onclick = "btn_getDoc()">get guide</button>
+	<div id="doc_container">
+	</div>
+
+	<p>-------------------------------------------------------------------------------------------</p>
+
+	<h1>Get app authorized scope</h1>
+
+	<button onclick = "btn_getScope()">get scope</button>
+	<div id="scope_container">
+	</div>
+
+	<p>-------------------------------------------------------------------------------------------</p>
+
+	<h1>Get app list</h1>
+
+	<button onclick = "btn_getApps()">get apps</button>
+	<div id="apps_container">
+	</div>
+
+	<p>-------------------------------------------------------------------------------------------</p>
+
 </body>
 </html>
